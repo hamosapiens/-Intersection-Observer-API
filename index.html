@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Intersection Observer Example</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="preload" href="lazyload.js" as="script">
+    <link rel="preload" href="main.js" as="script">
+</head>
+<body>
+
+<header>
+    <nav>
+        <!-- Navigation Links -->
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#footer">Footer</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="section1">
+        <h2>Section 1</h2>
+        <!-- Content -->
+        <img class="lazy-load" data-src="https://images.pexels.com/photos/19294343/pexels-photo-19294343/free-photo-of-pink-car.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Description">
+    </section>
+    <section id="section2">
+        <h2>Section 2</h2>
+        <!-- Content -->
+        <img class="lazy-load" data-src="https://images.pexels.com/photos/12532792/pexels-photo-12532792.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" alt="Description">
+    </section>
+</main>
+
+<footer id="footer">
+    <p>© 2024 Advanced Example</p>
+</footer>
+
+<script defer src="lazyload.js"></script>
+<script defer src="main.js"></script>
+
+</body>
+</html>
